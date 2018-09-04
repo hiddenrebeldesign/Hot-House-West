@@ -13,12 +13,38 @@
 		<link href="assets/css/gaia.css" rel="stylesheet"/>
 
 		<!--     Fonts and icons     -->
+		<link href="https://fonts.googleapis.com/css?family=BioRhyme:400,700" rel="stylesheet"> 
+		 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"> 
 		<link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
 		<link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
 		<script src="gen_validatorv4.js" type="text/javascript"></script>
 
-    <script>!function(){ var e=document.createElement("script");e.type="text/javascript",e.async=!0;var t=location.protocol+"//widgets.kudobuzz.com/js/widgetLoader.js";e.src=t;document.getElementsByTagName("head")[0].appendChild(e);window.Kudos={Widget:function(e){this.uid=e.uid}},Kudos.Widget({uid:"44a4x2u203x2q294s2d4z2x2x214y2z264w2u254z2t2r2y20364u2"})}()</script>
+    <script>
+    !function(){ var e=document.createElement("script");e.type="text/javascript",e.async=!0;var t=location.protocol+"//widgets.kudobuzz.com/js/widgetLoader.js";e.src=t;document.getElementsByTagName("head")[0].appendChild(e);window.Kudos={Widget:function(e){this.uid=e.uid}},Kudos.Widget({uid:"44a4x2u203x2q294s2d4z2x2x214y2z264w2u254z2t2r2y20364u2"})}()
+
+  window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}</script>
     <style>
 		.shopify-buy-frame--product{
 			display: none !important;
@@ -72,23 +98,28 @@
 		<div class="section section-header">
 				<div class="parallax filter">
 						<div class="image"
-								style="background-image: url('assets/img/backgrounds/family.jpg')">
+								style="background-image: url('assets/img/albumcover3600.jpg')">
 						</div>
 						<div class="container">
 								<div class="content">
 										<div class="title-area">
-												<h1 class="title-modern">EASTER CRÈCHE</h1>
-												<h3 class="italic">"He is not here, for He is risen."</h3>
+												<h1 class="title-modern">HOT HOUSE WEST</h1>
+												<h3>Django In Orbit</h3>
+												<button class="btn btn-danger btn-fill" onclick="smoothScroll(document.getElementById('first'))">Learn More</button>
 										</div>
 								</div>
-						</div>
+					</div>
 				</div>
 		</div>
 
 
-		<div class="section">
+		<div class="section" id="first">
 				<div class="container">
 						<div class="row">
+							<div class=col-md-5 style="padding-left: 0px;  padding-right: 0px;">
+								<img class="img-responsive" src="assets/img/albumcover1440.jpg">
+							</div>
+							<div class="col-md-7"">
 								<div class="title-area">
 										<h2>Celebrate The True Meaning Of Easter</h2>
 										<div class="separator separator-danger">♦</div>
@@ -99,6 +130,7 @@
 									Invite the spirit of these sacred events into your Easter season by assembling your own Easter Crèche. Celebrate, teach, and share testimony of the true meaning of Easter through this special decoration. Don't wait, Easter is the perfect time to share this wonderful gift.
 										</p>
 										</div>
+									</div>
 								</div>
 						</div>
 						<br>
@@ -447,6 +479,8 @@
 <!-- SHOPPING CART -->
 
 <script type="text/javascript">
+
+
 /*<![CDATA[*/
 
 (function () {
