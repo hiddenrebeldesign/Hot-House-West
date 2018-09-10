@@ -2052,9 +2052,7 @@ a,
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
   vertical-align: center;
   line-height: 1.7;
-  position: absolute;
-  top: 35%;
-  left: 20%;
+  top: 25%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
