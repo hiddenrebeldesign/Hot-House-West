@@ -65,12 +65,15 @@
 		</div>
 	</nav>
 
-
+ 
 	<div class="section section-header">
 		<div class="parallax filter">
 			<div class="image" id="fadeimage" style="background-image: url('assets/img/albumcover3600-2.jpg')">
 			</div>
 			<div class="container">
+				<a href="#bottom" class="down-arrow">
+						<i class="fas fa-chevron-down fa-5x"></i>
+				</a>
 				<div class="content">
 					<div class="title-area" id="fadein">
 						<h1 class="title-modern">HOT HOUSE WEST</h1>
@@ -84,82 +87,8 @@
 	</div>
 
 
-<!-- CONTACT AREA BEGIN -->
 
-		<!-- <div class="section section-small section-get-started">
-				<div class="parallax filter">
-						<div class="image"
-								style="background-image: url('assets/img/albumcover3600.jpg')"></div>
-								<div class="container">
-										<div class="title-area">
-												<h2>Contact Us</h2>
-												<div class="separator separator-danger">♦</div>
-												<p class="description col-md-8 col-md-offset-2">Please use this form to contact us with any questions or comments you may have and we will get back to you as soon as possible!</p>
-										</div> -->
-
-										<!-- CONTACT FORM -->
-
-								<!-- <div class="row">
-										<div class="col-md-8 col-md-offset-2">
-												<div class="contact-form">
-														<form id="contact-form" action="https://formspree.io/lmortensen@eastercreche.com" method="post">
-																<div class="row">
-																		<div class="col-md-4">
-																				<div class="form-group">
-																						<label>Your Full Name</label>
-																						<input type="text" name="name" value="" placeholder="Jane Doe" class="form-control form-control-plain" autocomplete="off" required>
-																				</div>
-																		</div>
-																		<div class="col-md-4">
-																				<div class="form-group">
-																						<label>Your Email</label>
-																						<input type="text" name="email" value="" placeholder="jane.doe@gmail.com" class="form-control form-control-plain" autocomplete="off" required>
-																				</div>
-																		</div>
-																		<div class="col-md-4">
-																				<div class="form-group">
-																						<label>Subject</label>
-																						<input type="text" name="subject" value="" placeholder="(subject)" class="form-control form-control-plain" autocomplete="off">
-																				</div>
-																		</div>
-																		<div class="col-md-12">
-																				<div class="form-group">
-																						<textarea name="content" class="form-control form-control-plain" placeholder="(message)" rows="6" autocomplete="off"></textarea>
-																				</div>
-																				<div>
-																						<div class="col-md-2 col-md-offset-5">
-																								<input type="submit" value="Submit" class="btn btn-danger btn-fill">
-																						</div>
-																				</div>
-																		</div>
-																</div>
-														</form>
-												</div>
-										</div>
-								</div>
-								<script type="text/javascript"> -->
-
-									<!-- // FORM VALIDATION
-
-								var frmvalidator  = new Validator("contact-form");
-								frmvalidator.addValidation("name","req","Please enter your name");
-								frmvalidator.addValidation("email","req","Please enter your email");
-								frmvalidator.addValidation("email","email","Please enter a valid email address");
-								frmvalidator.addValidation("subject","req","Please enter a subject");
-										</script> -->
-
-										<!-- CONTACT FORM END -->
-<!-- 
-						</div>
-				</div>
-		</div> -->
-
-<!-- CONTACT AREA END -->
-
-
-<!-- FOOTER BEGIN -->
-
-<footer class="footer footer-big footer-color-black" data-color="black">
+<footer class="footer footer-big footer-color-black" data-color="black" id="bottom">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
@@ -225,6 +154,21 @@
 		</div>
 	</div>
 </footer>
+</a>
+<script type="text/javascript">
+$('a[href^="#"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
+</script>
 
 </body>
 

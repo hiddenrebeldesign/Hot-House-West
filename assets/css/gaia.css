@@ -4100,3 +4100,11 @@ background-repeat: repeat-y;
 background-position:-5000px 0;
 animation: shimmerBackground 8s linear infinite;
 }
+
+.down-arrow {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  margin: 0px 0 0 -2.5em;
+  color: #efefef;
+}
