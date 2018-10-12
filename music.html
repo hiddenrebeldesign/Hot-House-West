@@ -124,6 +124,9 @@
 		<div class="image" id="fadeimage" style="background-image: url('assets/img/albumcover3600-2.jpg')">
 		</div>
 		<div class="container">
+      <a href="#section1" class="down-arrow">
+            <i class="fas fa-chevron-down fa-5x"></i>
+        </a>
 			<div class="content">
 				<div class="title-area" id="fadein">
           <h2 class="music-title">Django In Orbit</h2>
@@ -136,8 +139,11 @@
 </div>
 
 
-<div class="section">
+<div class="section" id="section1">
 	<div class="container">
+    <a href="#section2" class="down-arrow2">
+            <i class="fas fa-chevron-down fa-5x"></i>
+        </a>
 		<br>
     <br>
 
@@ -164,8 +170,9 @@
       </div>  
 		</div>    
 	</div>
+</div>
 
-
+<div class="section" id="section2">
   <div class="container">
     <!-- ROW 2-->
     <div class="row">
@@ -335,7 +342,21 @@
             $("#audioPlayer")[0].play();
         });
       }
+
+      $('a[href^="#"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
 </script>
+
 
 
 

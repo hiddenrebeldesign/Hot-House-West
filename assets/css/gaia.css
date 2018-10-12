@@ -4108,3 +4108,14 @@ animation: shimmerBackground 8s linear infinite;
   margin: 0px 0 0 -2.5em;
   color: #efefef;
 }
+.down-arrow2 {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  margin: 0px 0 0 -2.5em;
+  color: #777;
+}
+
+#section1 {
+  height: 100vh;
+}
