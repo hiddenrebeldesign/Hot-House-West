@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Audio Player
+  </title>
+
+  <style type="text/css">
+    #playlist li:nth-child(odd) {
+    background-color: lime;
+    }
+
+    #media-player {
+      width: 50%
+    }
+
+    #audioPlayer {
+      width: 100%;
+    }
+    #playlist{
+      list-style: none;
+      padding: 0 3%;
+    }
+    #playlist li a{
+      color: black;
+      text-decoration: none;
+    }
+    #playlist .current-song a{
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div id="media-player">
+    <audio src="" controls id="audioPlayer">
+      Sorry, your browser doesn't support HTML5!
+    </audio>
+    <ul id="playlist">
+      <li class="current-song"><a href="assets/audio/01 Pyramid.mp3">Pyramid</a></li>
+      <li><a href="assets/audio/02 Night and Day.mp3">Night and Day</a></li>
+      <li><a href="assets/audio/03 Dinette.mp3">Dinette</a></li>
+      <li><a href="assets/audio/04 Blues My Naughty Sweetie Gives To Me.mp3">Blues My Naughty Sweetie Give To Me</a></li>
+      <li><a href="assets/audio/05 The Girl From Andromeda.mp3">The Girl From Andromeda</a></li>
+      <li><a href="assets/audio/06 Vienna Waltz.mp3">Vienna Waltz</a></li>
+      <li><a href="assets/audio/07 I've Found A New Baby.mp3">I've Found A New Baby</a></li>
+      <li><a href="assets/audio/08 Swing 39.mp3">Swing 39</a></li>
+      <li><a href="assets/audio/09 When You're Smiling.mp3">When You're Smiling</a></li>
+      <li><a href="assets/audio/10 Vamp.mp3">Vamp</a></li>
+      <li><a href="assets/audio/11 The Way Things Weren't.mp3">The Way Things Weren't</a></li>
+      <li><a href="assets/audio/12 Django In Orbit.mp3">Django In Orbit</a></li>
+    </ul>
+  </div>
+
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>  
+    <script type="text/javascript">
+      audioPlayer();
+      function audioPlayer(){
+
+        var currentSong = 0;
+
+        $("#audioPlayer")[0].src = $("#playlist li a")[0];
+        $("#audioPlayer")[0].play();
+        $("#playlist li a").click(function(e){
+          e.preventDefault();
+          $("#audioPlayer")[0].src = this;
+          $("#audioPlayer")[0].play();
+          $("#playlist li").removeClass("current-song");
+          currentSong = $(this).parent().index();
+          $(this).parent().addClass("current-song");
+        });
+
+        $("#audioPlayer")[0].addEventListener("ended", function(){
+          currentSong++;
+            if(currentSong == $("#playlist li a").length)
+              currentSong = 0;
+            $("#playlist li").removeClass("current-song");
+            $("#playlist li:eq("+currentSong+")").addClass("current-song");
+            $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
+            $("#audioPlayer")[0].play();
+        });
+      }
+
+
+    </script>
+</body>
+</html>
