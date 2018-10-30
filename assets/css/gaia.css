@@ -1407,7 +1407,7 @@ a,
 }
 .navbar .navbar-nav.navbar-uppercase > li > a {
   text-transform: uppercase;
-  font-size: .85vw;
+  font-size: 1vw;
   letter-spacing: 0px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2930,9 +2930,11 @@ a,
   .section .title-area {
     top:-25vh;
   }
-
   .down-arrow {
     display: none;
+  }
+  .navbar .navbar-nav.navbar-uppercase > li > a {
+    font-size: 4vw;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
