@@ -2905,6 +2905,9 @@ a,
   .down-arrow {
     display: none;
   }
+  .down-arrow2 {
+    display: none;
+  }
   footer h3 {
     font-size: 3vh !important;
   }
@@ -2925,6 +2928,10 @@ a,
   h4 {
     font-size: 3vh;
     line-height: 4vh
+  }
+  p.description {
+    font-size: 1.7vh;
+    line-height: 3vh;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -3887,7 +3894,7 @@ body {
 
 .justify-text {
   text-align: justify;
-  text-justify: inter-word;
+  /*text-justify: inter-word;*/
   font-size: 15px;
 }
 
