@@ -2863,7 +2863,7 @@ a,
     /*line-height: 1.7;*/
   }
   .section-header .content h2 {
-    font-size: 6vh;
+    font-size: 3.5vh;
     /*letter-spacing: 0.07em;*/
     /*line-height: 1.7;*/
   }
@@ -2900,6 +2900,9 @@ a,
   footer h4 {
     font-size: 2vh;
   }
+  .section-header .content .music-title {
+    font-size: 6vh;
+  }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   h1.responsive-small {
@@ -2918,7 +2921,7 @@ a,
   h1.responsive-small {
     font-size: 2.3em !important;
   }
-  .section-header .content h2{
+  .section-header .content .music-title{
     font-size: 4.5vh;
   }
   h2 {
