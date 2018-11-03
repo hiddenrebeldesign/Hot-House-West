@@ -2918,7 +2918,9 @@ a,
   h1.responsive-small {
     font-size: 2.3em !important;
   }
-
+  .section-header .content h2{
+    font-size: 4.5vh;
+  }
   h2 {
     font-size: 1.625em;
     line-height: 1.15384615;
