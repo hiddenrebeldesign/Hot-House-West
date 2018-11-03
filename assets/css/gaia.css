@@ -23,6 +23,14 @@
   font-family: "PT Sans", sans-serif;
 }
 
+.quoteatr {
+ text-align: right;
+  font-size: 1.1vw;
+  line-height: 1.5vw;
+  /*font-style: italic;*/
+  font-family: "PT Sans", sans-serif; 
+}
+
 #section1 {
   height: 100vh;
 }
@@ -2948,6 +2956,15 @@ a,
   .quoted {
     font-size: 2.3vh;
   }
+
+  .quoteatr {
+ text-align: right;
+  font-size: 2vh;
+  line-height: 2vh;
+  /*font-style: italic;*/
+  font-family: "PT Sans", sans-serif;
+  padding-bottom: 5%; 
+}
   #section1{
     height: auto;
   }
@@ -3933,13 +3950,7 @@ body {
 }
 
 
-.quoteatr {
- text-align: right;
-  font-size: 1.1vw;
-  line-height: 1.5vw;
-  /*font-style: italic;*/
-  font-family: "PT Sans", sans-serif; 
-}
+
 
 #title-alternate {
   font-size: 10vh;
