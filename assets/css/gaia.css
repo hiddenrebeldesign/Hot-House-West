@@ -2863,9 +2863,9 @@ a,
     /*line-height: 1.7;*/
   }
   .section-header .content h2 {
-    font-size: 4em;
-    letter-spacing: 0.07em;
-    line-height: 1.7;
+    font-size: 6vh;
+    /*letter-spacing: 0.07em;*/
+    /*line-height: 1.7;*/
   }
   .section-header .content h1 span {
     font-size: 1em;
@@ -4095,3 +4095,5 @@ animation: shimmerBackground 8s linear infinite;
 #section1 {
   height: 100vh;
 }
+
+.col-xs-2
