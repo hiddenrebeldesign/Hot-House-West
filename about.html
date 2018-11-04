@@ -25,6 +25,7 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js" type="text/javascript"></script>
 
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
 	<script src="gen_validatorv4.js" type="text/javascript"></script>
 </head>
 
@@ -71,6 +72,9 @@
 		<div class="image" id="fadeimage" style="background-image:url('assets/img/170404_80.jpg')">
 		</div>
 		<div class="container">
+			<a href="#section1" class="down-arrow">
+            <i class="fas fa-chevron-down fa-5x"></i>
+        </a>
 			<div class="title-area" id="fadein">
 				<h2 id="title-alternate">About</h2>
 			</div>
@@ -78,7 +82,7 @@
 	</div>
 </div>
 
-<div class="section">
+<div class="section" id="section1">
 	<div class="text-area">
 		<div class="container">
 
@@ -290,7 +294,24 @@
                 $(this).ekkoLightbox({
                 alwaysShowClose: true});
             });
+
+
+	$('a[href^="#"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
 </script>
+
+
+
 
 </body>
 

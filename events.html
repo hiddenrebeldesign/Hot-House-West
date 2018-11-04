@@ -20,6 +20,7 @@
 
 
   <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
+  <script src="assets/js/jquery.min.js" type="text/javascript"></script>
   <script src="gen_validatorv4.js" type="text/javascript"></script>
 </head>
 
@@ -66,6 +67,9 @@
 		<div class="image" id="fadeimage" style="background-image: url('assets/img/DSC_1348.jpg')">
 		</div>
 		<div class="container">
+      <a href="#section1" class="down-arrow">
+            <i class="fas fa-chevron-down fa-5x"></i>
+        </a>
 			<div class="title-area" id="fadein">
 				<h2 id="title-alternate">Events</h2>
 			</div>
@@ -75,7 +79,7 @@
 </div>
 
 
-<div class="section">
+<div class="section" id="section1">
 	<div class="container">
 		
     <!-- BANDSINTOWN WIDGET -->
@@ -176,10 +180,25 @@
   </div>
 </footer>
 
+<script type="text/javascript">
+$('a[href^="#"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
+</script>
+
 </body>
 
 <!--   core js files    -->
-<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<!-- <script src="assets/js/jquery.min.js" type="text/javascript"></script> -->
 <script src="assets/js/bootstrap.js" type="text/javascript"></script>
 
 <!--  js library for devices recognition -->

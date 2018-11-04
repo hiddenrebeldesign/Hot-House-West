@@ -4143,6 +4143,7 @@ animation: shimmerBackground 8s linear infinite;
   left: 50%;
   margin: 0px 0 0 -2.5em;
   color: #efefef;
+  z-index: 1;
 }
 .down-arrow2 {
   position: absolute;
