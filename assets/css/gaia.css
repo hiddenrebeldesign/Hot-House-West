@@ -2964,9 +2964,17 @@ a,
     padding-bottom: 10%;
   }
 
+  h2 {
+    font-size: 4vh;
+  }
   h4 {
     font-size: 3vh;
     line-height: 4vh
+  }
+
+  h5 {
+    font-size: 2vh;
+
   }
   p.description {
     font-size: 1.7vh;
@@ -3006,6 +3014,43 @@ a,
 transform:scale(1.3,1.0);
 text-align: center;
 }
+.form-control-plain {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  padding: 8px 0;
+  font-size: 2vh;
+  background-color: transparent;
+  border-color: #E3E3E3;
+  resize: vertical;
+}
+
+.form-control-dark {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  padding: 8px 0;
+  font-size: 2vh;
+  background-color: transparent;
+  border-color: #E3E3E3;
+  resize: vertical;
+}
+
+.btn,
+.navbar .navbar-nav > li > a.btn {
+  font-size:1.5vh;
+}
+
+.section .text-area .description,
+.section .text-area .description p {
+  font-size: 1.7vh;
+  color: #666666;
+}
+
+.card p {
+  font-size: 1.2vh;
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   h1.responsive-small {
