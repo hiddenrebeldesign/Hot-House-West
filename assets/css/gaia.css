@@ -39,6 +39,21 @@
   height: auto;
 }
 
+#title-alternate {
+  font-size: 10vh;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  font-family: "BioRhyme", sans-serif;
+  font-weight: 400;
+  -webkit-transform:scale(1.3, 1.0);
+-moz-transform:scale(1.3, 1.0);
+-ms-transform:scale(1.3, 1.0);
+-o-transform:scale(1.3, 1.0);
+transform:scale(1.3,1.0);
+text-align: right;
+}
+
 html {
   font-size: 14px;
   -ms-text-size-adjust: 100%;
@@ -2973,6 +2988,24 @@ a,
   #section1{
     height: auto;
   }
+
+  #title-alternate {
+  font-size: 7vh;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "BioRhyme", sans-serif;
+  font-weight: 400;
+  -webkit-transform:scale(1.3, 1.0);
+-moz-transform:scale(1.3, 1.0);
+-ms-transform:scale(1.3, 1.0);
+-o-transform:scale(1.3, 1.0);
+transform:scale(1.3,1.0);
+text-align: center;
+}
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   h1.responsive-small {
@@ -3957,20 +3990,7 @@ body {
 
 
 
-#title-alternate {
-  font-size: 10vh;
-  position: absolute;
-  right: 10%;
-  bottom: 10%;
-  font-family: "BioRhyme", sans-serif;
-  font-weight: 400;
-  -webkit-transform:scale(1.3, 1.0);
--moz-transform:scale(1.3, 1.0);
--ms-transform:scale(1.3, 1.0);
--o-transform:scale(1.3, 1.0);
-transform:scale(1.3,1.0);
-text-align: right;
-}
+
 
 .kont {
   position: relative
