@@ -35,6 +35,10 @@
   height: 100vh;
 }
 
+#section2 {
+  height: auto;
+}
+
 html {
   font-size: 14px;
   -ms-text-size-adjust: 100%;
