@@ -1624,7 +1624,7 @@ pre code {
 }
 .col-xs-12 {
   width: 100%;
-  padding: 2%;
+  /*padding: 2%;*/
 }
 .col-xs-11 {
   width: 91.66666667%;
@@ -6613,3 +6613,8 @@ button.close {
     display: none !important;
   }
 }
+
+@media (max-width: 992px) {
+  .col-xs-12 {
+    padding: 2%;
+  }
