@@ -4009,12 +4009,6 @@ animation: shimmerBackground 8s linear infinite;
 
 
 
-
-
-.col-xs-2
-
-
-
 @media (max-width: 992px) {
   .section-with-hover .project .over-area {
     opacity: 1;
