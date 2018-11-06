@@ -15,7 +15,6 @@
  
 /*      light colors         */
 
-<<<<<<< HEAD
 .down-arrow {
   position: absolute;
   bottom: 0%;
@@ -37,45 +36,37 @@
   font-style: italic;
   font-family: "PT Sans", sans-serif;
 }
-=======
 
->>>>>>> master
-
-/*audio {
-  display: block;
-  width: 200px;
-  padding: 5%;
+.quoteatr {
+ text-align: right;
+  font-size: 1.1vw;
+  line-height: 1.5vw;
+  /*font-style: italic;*/
+  font-family: "PT Sans", sans-serif; 
 }
 
+#section1 {
+  height: 100vh;
+}
 
-  #playlist li:nth-child(odd) {
-    background-color: lime;
-    }
+#section2 {
+  height: auto;
+}
 
-    #media-player {
-      width: 50%;
-    }
-
-    #audioPlayer {
-      width: 100%;
-    }
-    #playlist{
-      list-style: none;
-      padding: 0 3%;
-    }
-    #playlist li a{
-      color: black;
-      text-decoration: none;
-      list-style: none;
-    }
-    #playlist .current-song a{
-      color: blue;
-    }
-*/
-
-
-
-
+#title-alternate {
+  font-size: 10vh;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  font-family: "BioRhyme", sans-serif;
+  font-weight: 400;
+  -webkit-transform:scale(1.3, 1.0);
+-moz-transform:scale(1.3, 1.0);
+-ms-transform:scale(1.3, 1.0);
+-o-transform:scale(1.3, 1.0);
+transform:scale(1.3,1.0);
+text-align: right;
+}
 
 html {
   font-size: 14px;
@@ -1097,6 +1088,17 @@ a,
   width: 100%;
   height: 100%;
 }
+.section .review-area {
+  /*max-width: 1100px;*/
+  margin: 0 auto;
+  display: block;
+  padding: 0 15px;
+  text-align: center;
+  position: absolute;
+  top: 3vh;
+  width: 100%;
+  height: 100%;
+}
 
 .section .title-area .description {
   font-size: 1vw;
@@ -1431,7 +1433,7 @@ a,
 }
 .navbar .navbar-nav.navbar-uppercase > li > a {
   text-transform: uppercase;
-  font-size: .85vw;
+  font-size: 1vw;
   letter-spacing: 0px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2129,7 +2131,6 @@ a,
   color: white;
   text-align: center;
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
-  vertical-align: center;
   line-height: 1.7;
   top: 25%;
   -webkit-transform: translateY(-50%);
@@ -2851,126 +2852,27 @@ a,
     display: inline;
   }
 }
-<<<<<<< HEAD
 
-=======
-@media (max-width: 992px) {
-  .section-with-hover .project .over-area {
-    opacity: 1;
-    -webkit-transition: background 0.25s, opacity 0.25s 0.25s;
-    -moz-transition: background 0.25s, opacity 0.25s 0.25s;
-    -o-transition: background 0.25s, opacity 0.25s 0.25s;
-    -ms-transition: background 0.25s, opacity 0.25s 0.25s;
-    transition: background 0.25s, opacity 0.25s 0.25s;
-    transition-delay: 0;
-    -webkit-transition-delay: 0;
-  }
-  .section-with-hover .project .over-area .content {
-    opacity: 1;
-    opacity: 0.2s;
-    filter: alpha(opacity=20s);
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    text-align: center;
-  }
-  .section-with-hover .project .over-area .content h4 {
-    opacity: 1;
-    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
-    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-    transition: opacity 0.3s, transform 0.3s;
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  .section-with-hover .project .over-area .content p {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-
-  .project-content .project-details {
-    padding: 0 30px;
-  }
-  .project-content .icon-close {
-    right: -15px;
-  }
-  .project-content .icon-close i {
-    font-size: 30px;
-  }
-
-  .section-header {
-    padding: 0 !important;
-  }
-  .section-header .parallax, .section-header .static-image {
-    height: 90vh;
-  }
-  .section-header .parallax:after, .section-header .static-image:after {
-    height: 90vh;
-  }
-  .section-header .content {
-    top: 50%;
-  }
-  .section-header .content h1, .section-header .content h5, .section-header .content p {
-    margin: 0;
-  }
-  .section-header .content h1 {
-    font-size: 4.5em;
-    letter-spacing: 0.07em;
-    line-height: 1.7;
-  }
-
-  .section-header .content h2 {
-    font-size: 4em;
-    letter-spacing: 0.07em;
-    line-height: 1.7;
-  }
-  .section-header .content h1 span {
-    font-size: 1em;
-  }
-
-  .section-header .content h5 {
-    font-size: 1.125em;
-    margin-top: 50px;
-  }
-  .section-header .content .separator {
-    width: 12em;
-  }
-
-  .section-signin {
-    padding: 0;
-  }
-  .section-signin .image-container,
-  .section-signin .form-container {
-    width: 100%;
-  }
-  .section-signin .filter {
-    min-height: 0;
-  }
-}
->>>>>>> master
 @media (min-width: 768px) and (max-width: 1200px) {
   h1.responsive-small {
     font-size: 4em !important;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+
+  .navbar .navbar-nav.navbar-uppercase > li > a {
+    font-size: 4vw;
+  }
   h1 {
-    font-size: 2em;
-    line-height: 1.25;
+    /*font-size: 2em;
+    line-height: 1.25;*/
   }
   h1.responsive-small {
     font-size: 2.3em !important;
   }
-
+  .section-header .content .music-title{
+    font-size: 4.5vh;
+  }
   h2 {
     font-size: 1.625em;
     line-height: 1.15384615;
@@ -2982,7 +2884,7 @@ a,
   }
 
   h4 {
-    line-height: 1.11111111;
+    
   }
 
   .navbar-transparent {
@@ -3911,7 +3813,7 @@ body {
 
 .justify-text {
   text-align: justify;
-  text-justify: inter-word;
+  /*text-justify: inter-word;*/
   font-size: 15px;
 }
 
@@ -3931,34 +3833,10 @@ body {
   margin: .66%;
 }
 
-.quoted {
-  text-align: right;
-  font-size: 1.4vw;
-  font-style: italic;
-  font-family: "PT Sans", sans-serif;
-}
-.quoteatr {
- text-align: right;
-  font-size: 1.1vw;
-  line-height: 1.5vw;
-  /*font-style: italic;*/
-  font-family: "PT Sans", sans-serif; 
-}
 
-#title-alternate {
-  font-size: 10vh;
-  position: absolute;
-  right: 10%;
-  bottom: 10%;
-  font-family: "BioRhyme", sans-serif;
-  font-weight: 400;
-  -webkit-transform:scale(1.3, 1.0);
--moz-transform:scale(1.3, 1.0);
--ms-transform:scale(1.3, 1.0);
--o-transform:scale(1.3, 1.0);
-transform:scale(1.3,1.0);
-text-align: right;
-}
+
+
+
 
 .kont {
   position: relative
@@ -4129,7 +4007,6 @@ background-position:-5000px 0;
 animation: shimmerBackground 8s linear infinite;
 }
 
-<<<<<<< HEAD
 
 
 
@@ -4292,14 +4169,6 @@ animation: shimmerBackground 8s linear infinite;
   /*font-style: italic;*/
   font-family: "PT Sans", sans-serif;
   padding-bottom: 5%; 
-=======
-.down-arrow {
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  margin: 0px 0 0 -2.5em;
-  color: #efefef;
->>>>>>> master
 }
   #section1{
     height: auto;
@@ -4346,7 +4215,6 @@ text-align: center;
   resize: vertical;
 }
 
-<<<<<<< HEAD
 .btn,
 .navbar .navbar-nav > li > a.btn {
   font-size:1.5vh;
@@ -4360,8 +4228,4 @@ text-align: center;
 
 .card p {
   font-size: 1.2vh;
-=======
-#section1 {
-  height: 100vh;
->>>>>>> master
 }
